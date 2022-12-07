@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 100%;
+  height: auto;
+  background-color: #3040f8;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+nav .navbar .logo a {
+  color: #fff;
+  font-size: 25px;
+}
+nav .navbar .links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+nav .navbar .links li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+nav .navbar .links li .arrow {
+  width: 22px;
+  line-height: 70px;
+  text-align: center;
+  color: #fff;
+}
+nav .navbar .links li:hover .arrow {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in-out;
+}
+nav .navbar .links li a {
+  color: #fff;
+}
+nav .navbar .links li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #3040f8;
+  width: 100%;
+  line-height: 29px;
+}
+nav .navbar .links li .sub-menu li a:hover {
+  color: #000;
+}
+nav .navbar .links li:hover .html-sub-menu, nav .navbar .links li:hover .js-sub-menu {
+  display: block;
+  transition: all 0.4s ease;
+}
+
+/*# sourceMappingURL=style.css.map */
